@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7e0101;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.main-cont {
+  background-color: whitesmoke;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 50px;
+  /* margin: 0 15px; */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.main-cont > header {
+  margin-bottom: 40px;
+}
+
+.main-cont form {
+  min-height: 600px;
+  /* border: 1px solid brown; */
+}
+
+form > h2 {
+  margin-bottom: 20px;
+}
+
+.personal-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.personal-cont > .fields {
+  display: flex;
+  width: calc(100% / 3 - 15px);
+  flex-direction: column;
+}
+
+.fields label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fields input {
+  height: 42px;
+  margin: 12px 0;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 10px;
+}
+
+.fields input:is(:focus) {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.fields input[type="date"] {
+  color: #707070;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fields input[type="date"]:valid {
+  color: black;
+}
+
+.gender-cont {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  margin: 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 10px;
+  background-color: white;
+}
+
+.gender-cont div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.fields.address {
+  width: 100%;
+}
