@@ -7,9 +7,10 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #7e0101;
+  background-color: #eaf1e4;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
@@ -18,23 +19,27 @@ body {
   background-color: whitesmoke;
   max-width: 900px;
   width: 100%;
-  border-radius: 12px;
-  padding: 50px;
+  border-radius: 0px 0px 12px 12px;
+  padding: 40px;
   /* margin: 0 15px; */
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
-.main-cont > header {
-  margin-bottom: 40px;
-}
-
 .main-cont form {
-  min-height: 600px;
-  /* border: 1px solid brown; */
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-form > h2 {
-  margin-bottom: 20px;
+.form-header {
+  max-width: 900px;
+  width: 100%;
+  background-color: #556f44;
+  color: whitesmoke;
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .personal-cont {
@@ -52,7 +57,6 @@ form > h2 {
 
 .fields label {
   font-size: 16px;
-  font-weight: 500;
 }
 
 .fields input {
@@ -100,4 +104,23 @@ form > h2 {
 
 div.fields.address {
   width: 100%;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #556f44;
+  color: whitesmoke;  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #495d3a;
 }
