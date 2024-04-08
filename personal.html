@@ -7,6 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section class="step-wizard">
+    <ul class="step-wizard-list">
+        <li class="step-wizard-item">
+            <span class="progress-count">1</span>
+            <span class="progress-label">Account Info</span>
+        </li>
+        <li class="step-wizard-item current-item">
+            <span class="progress-count">2</span>
+            <span class="progress-label">Personal Info</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">3</span>
+            <span class="progress-label">Professional Info</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">4</span>
+            <span class="progress-label">Job Preferences</span>
+        </li>
+        <li class="step-wizard-item">
+          <span class="progress-count">4</span>
+          <span class="progress-label">Skills</span>
+      </li>
+    </ul>
+  </section>
+
   <div class="form-header">
     <header>
       <h1>Personal Information</h1>
@@ -16,7 +41,7 @@
     <form action="#">
       <h2>Personal Details</h2>
 
-      <div class="personal-cont">
+      <div class="form-cont">
         <div class="fields">
           <label for="fName">Full Name<span class="required">*</span></label>
           <input type="text" name="fName" id="fName" placeholder="Enter your first name" required>

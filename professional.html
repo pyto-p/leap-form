@@ -7,35 +7,74 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <section class="step-wizard">
+    <ul class="step-wizard-list">
+        <li class="step-wizard-item">
+            <span class="progress-count">1</span>
+            <span class="progress-label">Account Info</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">2</span>
+            <span class="progress-label">Personal Info</span>
+        </li>
+        <li class="step-wizard-item current-item">
+            <span class="progress-count">3</span>
+            <span class="progress-label">Professional Info</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">4</span>
+            <span class="progress-label">Job Preferences</span>
+        </li>
+        <li class="step-wizard-item">
+          <span class="progress-count">4</span>
+          <span class="progress-label">Skills</span>
+      </li>
+    </ul>
+  </section>
+
   <div class="form-header">
     <header>
-      <h1>Personal Information</h1>
+      <h1>Professional Information</h1>
     </header>
   </div>
   <div class="main-cont">
     <form action="#">
-      <h2>Personal Details</h2>
-
-      <div class="personal-cont">
+      
+      <div class="form-cont">
+        <h2>Past Work Experiences</h2>
         <div class="fields">
-          <label for="fName">Full Name<span class="required">*</span></label>
-          <input type="text" name="fName" id="fName" placeholder="Enter your first name" required>
+          <label for="job-title">Job Title<span class="required">*</span></label>
+          <input type="text" name="job-title" id="job-title" placeholder="Enter your past job title" required>
         </div>
         
         <div class="fields">
-          <label for="email">Email Address<span class="required">*</span></label>
-          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          <label for="industry">Industry<span class="required">*</span></label>
+          <input type="text" name="industry" id="industry" placeholder="Enter your past job industry" required>
         </div>
 
         <div class="fields">
-          <label for="phone">Mobile Number<span class="required">*</span></label>
-          <input type="tel" name="phone" id="phone" placeholder="Enter your mobile number">
+          <label for="comp-name">Company Name<span class="required">*</span></label>
+          <input type="text" name="comp-name" id="comp-name" placeholder="Enter your past job company name" required>
         </div>
-  
-        <div class="fields address">
-          <label for="address">Residential Address</label>
-          <input type="text" name="address" id="address" placeholder="Enter your residential address">
+
+        <div class="fields">
+          <label for="work-exp">Work Experience (Years)<span class="required">*</span></label></label>
+          <input type="number" name="work-exp" id="work-exp" placeholder="Enter your work experience in years" required>
         </div>
+
+        <div class="fields">
+          <label for="education">Education Level<span class="required">*</span></label>
+          <select id="education" name="education" required>
+            <option value="highschool">High School</option>
+            <option value="bachelors">Bachelor's Degree</option>
+            <option value="masters">Master's Degree</option>
+            <option value="doctorate">Doctorate/Ph.D.</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+      </div>
+
       <div class="btn-cont">
         <a href="personal.html"><button type="button">Previous</button></a>
         <a href="professional.html"><button type="button">Next</button></a>
