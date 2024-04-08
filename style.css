@@ -25,6 +25,13 @@ body {
   margin-bottom: 30px;
 }
 
+.main-cont.submit {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+}
+
 .main-cont form {
   display: flex;
   flex-direction: column;
