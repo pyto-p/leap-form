@@ -26,7 +26,6 @@ body {
 }
 
 .main-cont form {
-  min-height: 350px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -44,14 +43,13 @@ body {
 
 .personal-cont {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .personal-cont > .fields {
   display: flex;
-  width: calc(100% / 3 - 15px);
   flex-direction: column;
 }
 
@@ -83,6 +81,10 @@ body {
   color: black;
 }
 
+input#address {
+  height: 100px;
+}
+
 .gender-cont {
   display: flex;
   justify-content: space-between;
@@ -108,7 +110,7 @@ div.fields.address {
 
 .btn-cont {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 button {
@@ -123,4 +125,8 @@ button {
 
 button:hover {
   background-color: #495d3a;
+}
+
+.required {
+  color: red;
 }
