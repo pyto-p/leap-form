@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="step-wizard">
+    <ul class="step-wizard-list">
+        <li class="step-wizard-item">
+            <span class="progress-count">1</span>
+            <span class="progress-label">Account Info</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">2</span>
+            <span class="progress-label">Personal Info</span>
+        </li>
+        <li class="step-wizard-item">
+            <span class="progress-count">3</span>
+            <span class="progress-label">Professional Info</span>
+        </li>
+        <li class="step-wizard-item current-item">
+            <span class="progress-count">4</span>
+            <span class="progress-label">Job Preferences</span>
+        </li>
+        <li class="step-wizard-item">
+          <span class="progress-count">4</span>
+          <span class="progress-label">Skills</span>
+      </li>
+    </ul>
+  </section>
+
+  <div class="form-header">
+    <header>
+      <h1>Job Preferences</h1>
+    </header>
+  </div>
+  <div class="main-cont">
+    <form action="#">
+      
+      <div class="form-cont">
+        <h2>Job Type:</h2>
+        <div class="fields-bttn1">
+            <button class="type1" type="button" onclick="toggleButton(this)">Full-Time Job</button>
+            <button class="type1" type="button" onclick="toggleButton(this)">Part-Time Job</button>
+            <button class="type1" type="button" onclick="toggleButton(this)">Contract Job</button>
+            <button class="type1" type="button" onclick="toggleButton(this)">Temporary Job</button>
+        </div>
+        <div class="fields-bttn2">
+            <button class="type2" type="button" onclick="toggleButton(this)">Internship</button>
+            <button class="type2" type="button" onclick="toggleButton(this)">Remote Job</button>
+            <button class="type2" type="button" onclick="toggleButton(this)">Freelance Job</button>
+        </div>
+        <h2>Desired Salary:</h2>  
+        <div class="fields">
+            <div class="wage-input">
+                <input type="text" name="tools" id="wage" placeholder="Minimum Wage" required>
+                <label for="dash">  -  </label>
+                <input type="text" name="tools" id="wage" placeholder="Maximum Wage" required>
+            </div>
+        </div>
+
+        <h2>Location Preferences:</h2>
+        <div class="fields">
+            <select>
+                <option value="" disabled selected>Select Region</option>
+                <option value="ncr">National Capital Region (NCR)</option>
+                <option value="regionI">Region I (Ilocos Region)</option>
+                <option value="regionII">Region II (Cagayan Valley)</option>
+                <option value="regionIII">Region III (Central Luzon)</option>
+                <option value="regionIVA">Region IV-A (CALABARZON)</option>
+                <option value="regionIVB">Region IV-B (MIMAROPA)</option>
+                <option value="regionV">Region V (Bicol Region)</option>
+                <option value="regionVI">Region VI (Western Visayas)</option>
+                <option value="regionVII">Region VII (Central Visayas)</option>
+                <option value="regionVIII">Region VIII (Eastern Visayas)</option>
+                <option value="regionIX">Region IX (Zamboanga Peninsula)</option>
+                <option value="regionX">Region X (Northern Mindanao)</option>
+                <option value="regionXI">Region XI (Davao Region)</option>
+                <option value="regionXII">Region XII (SOCCSKSARGEN)</option>
+                <option value="regionXIII">Region XIII (CARAGA)</option>
+                <option value="barmm">Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)</option>
+                <option value="car">Cordillera Administrative Region (CAR)</option>
+              </select>
+        </div>
+
+      </div>
+
+      <div class="btn-cont">
+        <a href="professional.html"><button type="button">Previous</button></a>
+        <a href="skills.html"><button type="button">Next</button></a>
+      </div> 
+    </form>
+  </div>
+<script>
+    function toggleButton(button) {
+      button.classList.toggle('clicked');
+    }
+</script>
+</body>
+</html>
