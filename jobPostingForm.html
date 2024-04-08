@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Posting Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-header">
+    <header>
+      <h1>Post <a href="http://" target="_blank" rel="noopener noreferrer"></a> Job</h1>
+    </header>
+  </div>
+
+  <div class="main-cont">
+    <form action="#">
+      <h2>Job Information</h2>
+
+      <div class="form-cont">
+        <div class="form-cont-col">
+          <div class="fields">
+            <label for="job-title">Job Title<span class="required">*</span></label>
+            <input type="text" name="job-title" id="job-title" placeholder="Enter the job's title" required>
+          </div>
+          
+          <div class="fields">
+            <label for="company">Company<span class="required">*</span></label>
+            <input type="text" name="company" id="company" placeholder="Enter the company's name" required>
+          </div>
+        </div>
+
+        <div class="fields">
+          <label for="company-loc">Company Location<span class="required">*</span></label>
+          <input type="text" name="company-loc" id="company-loc" placeholder="Enter the company's location" required>
+        </div>
+        
+        <div class="form-cont-col">
+          <div class="fields">
+            <label for="job-type">Job Type<span class="required">*</span></label>
+            <select id="job-type" name="job-type" required>
+              <option value="full">Full-Time Job</option>
+              <option value="part">Part-Time Job</option>
+              <option value="contract">Contract Job</option>
+              <option value="temporary">Temporary Job</option>
+              <option value="intern">Internship</option>
+              <option value="remote">Remote Job</option>
+              <option value="freelance">Freelance Job</option>
+            </select>
+          </div>
+          
+          <div class="fields">
+            <label for="workplace-type">Workplace Type<span class="required">*</span></label>
+            <select id="workplace-type" name="workplace-type" required>
+              <option value="on-site">On-site</option>
+              <option value="online">Online</option>
+              <option value="hybrid">Hybrid</option>
+            </select>
+          </div>
+        </div>
+
+        <h2>Specification</h2>
+
+        <div class="fields">
+          <label for="skills">Skills<span class="required">*</span></label>
+          <textarea name="skills" id="skills" placeholder="Enumerate the needed skills" required></textarea>
+        </div>
+
+        <div class="fields">
+          <label for="requirements">Requirements<span class="required">*</span></label>
+          <textarea name="requirements" id="requirements" placeholder="Enumerate the requirements" required></textarea>
+        </div>
+
+        <div class="fields">
+          <label for="salary">Salary<span class="required">*</span></label>
+          <input type="text" name="salary" id="salary" placeholder="Enter the salary" required></textarea>
+        </div>
+
+        <div class="fields">
+          <label for="benefits">Benefits<span class="required">*</span></label>
+          <textarea name="benefits" id="benefits" placeholder="Enumerate the benefits" required></textarea>
+        </div>
+
+        <div class="fields">
+          <label for="add-info">Additional Information<span class="required">*</span></label>
+          <textarea name="add-info" id="add-info" placeholder="Enter additional information about the job" required></textarea>
+        </div>
+        
+      <div class="btn-cont">
+        <button class="hide-btn"></button>
+        <a href="personal.html"><button type="button">Post</button></a>
+      </div> 
+    </form>
+  </div>
+</body>
+</html>
