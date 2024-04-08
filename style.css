@@ -118,6 +118,62 @@ body {
   color: black;
 }
 
+.fields > .wage-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fields > .wage-input input{
+    flex: 1;
+    padding: 10px;
+}
+
+.fields > .wage-input label{
+  font-size: 22px;
+  margin-right: 11px;
+  margin-left: 11px;
+}
+
+.fields-bttn1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fields-bttn2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type1{
+  display: inline-block;
+  width: 25%;
+  margin-right: 10px; 
+  text-align: center; 
+  padding: 10px 20px; 
+  border: none;
+  background-color: #d9d9d9;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.type2{
+  display: inline-block;
+  width: 24%;
+  margin-top: -25px;
+  margin-right: 10px; 
+  text-align: center; 
+  padding: 10px 20px; 
+  border: none;
+  background-color: #d9d9d9;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 input#address {
   height: 100px;
 }
@@ -166,6 +222,17 @@ button {
 
 button:hover {
   background-color: #495d3a;
+  color: white;
+}
+
+.type1.clicked {
+  background-color: #495d3a;
+  color: white;
+}
+
+.type2.clicked {
+  background-color: #495d3a;
+  color: white;
 }
 
 .required {
