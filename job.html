@@ -41,7 +41,7 @@
     <form action="#">
       
       <div class="form-cont">
-        <h2>Job Type:</h2>
+        <h2>Job Type<span class="required">*</span></h2>
         <div class="fields-bttn1">
             <button class="type1" type="button" onclick="toggleButton(this)">Full-Time Job</button>
             <button class="type1" type="button" onclick="toggleButton(this)">Part-Time Job</button>
@@ -53,7 +53,7 @@
             <button class="type2" type="button" onclick="toggleButton(this)">Remote Job</button>
             <button class="type2" type="button" onclick="toggleButton(this)">Freelance Job</button>
         </div>
-        <h2>Desired Salary:</h2>  
+        <h2>Desired Salary<span class="required">*</span></h2>  
         <div class="fields">
             <div class="wage-input">
                 <input type="number" name="tools" id="wage" placeholder="Minimum Wage" required>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <h2>Location Preferences:</h2>
+        <h2>Location Preferences<span class="required">*</span></h2>
         <div class="fields">
             <select>
                 <option value="" disabled selected>Select Region</option>
