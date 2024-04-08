@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #eaf1e4;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   
 }
 
@@ -40,6 +40,7 @@ body {
   padding: 30px 40px;
   border-radius: 12px 12px 0px 0px;
   margin-top: 30px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .form-cont {
@@ -56,6 +57,7 @@ body {
 
 .fields label {
   font-size: 16px;
+  font-weight: bold;
 }
 
 .fields input, .fields select {
@@ -79,7 +81,6 @@ body {
 
 .fields input[type="date"] {
   color: #707070;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .fields input[type="date"]:valid {
@@ -87,6 +88,10 @@ body {
 }
 
 input#address {
+  height: 100px;
+}
+
+input#langu {
   height: 100px;
 }
 
@@ -231,6 +236,7 @@ button:hover {
   font-size: 14px;
   font-weight: 600;
   margin-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .current-item .progress-count:before,
