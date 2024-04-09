@@ -50,6 +50,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+
 .form-cont {
   display: flex;
   flex-direction: column;
@@ -364,4 +365,18 @@ button:hover {
 
 .current-item .progress-count{
   color: #495d3a;
+}
+
+
+@media (max-width: 600px) {
+  .main-cont {
+    padding: 20px; /* Decrease padding for smaller screens */
+    max-width: 300px;
+  }
+  .form-header {
+    max-width: 300px;
+  }
+  .step-wizard {
+    display: none;
+  }
 }
